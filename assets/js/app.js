@@ -24,8 +24,9 @@ function newNote(e) {
 
   // getting access to the user input
   const note = document.querySelector("#note").value;
-  if (note === '' || note === ' ') {
-    location.reload();
+  if (note === "" || note === " ") {
+    alert("لطفاً مثل آدم وارد کنید!");
+    return;
   }
 
   // Create The remove button
