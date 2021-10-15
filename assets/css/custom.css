@@ -80,3 +80,8 @@ body {
   font-weight: 100;
   font-style: normal;
 }
+
+#note-list ul{
+  padding: 0;
+  list-style-type: arabic-indic;
+}
