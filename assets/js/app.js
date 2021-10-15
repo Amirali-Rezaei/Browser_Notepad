@@ -1,5 +1,5 @@
 // variables
-const noteContainer = document.querySelector("#note-list");
+const noteContainer = document.querySelector("#note-list ul");
 
 // eventlisteners
 // Calling the form submission function to work
