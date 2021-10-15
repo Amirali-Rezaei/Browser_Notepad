@@ -24,6 +24,9 @@ function newNote(e) {
 
   // getting access to the user input
   const note = document.querySelector("#note").value;
+  if (note === '' || note === ' ') {
+    location.reload();
+  }
 
   // Create The remove button
   const removeNoteBtn = document.createElement("a");
@@ -45,9 +48,6 @@ function newNote(e) {
 
   // Calling the add to localStorage function
   addToLocalStorage(note);
-
-  // Show An Alert To Say Operation Was Successful
-  alert("یادداشت با موفقیت ثبت شد!");
 }
 
 // Removing a li (note from list)
